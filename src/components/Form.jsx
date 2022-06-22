@@ -2,6 +2,8 @@ import React from 'react'
 import { Card } from '@mui/material'
 import {Button} from '@mui/material';
 import './styles.css';
+import {Save} from '@mui/icons-material';
+import {Cancel} from '@mui/icons-material';
 
 const Form = () => {
 
@@ -21,10 +23,16 @@ const Form = () => {
                 </label>
             </div>
             <div>
-            <Button variant="outlined" color="error" >
+            <Button 
+            startIcon={<Cancel />}
+            variant="outlined" 
+            color="error" >
                 CANCEL
             </Button>
-            <Button variant="outlined" type='submit'>
+            <Button 
+            startIcon = {<Save />}
+            variant="outlined" 
+            type='submit'>
                 SUBMIT
             </Button>
             </div>
